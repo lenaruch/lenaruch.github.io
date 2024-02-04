@@ -7,6 +7,14 @@
   button {
 	border: none;
   }
+
+  body{
+	max-width: 1600px;
+	margin: auto;
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+  }
   
   /* Класс для панели header */
   .heading__bar {
@@ -39,21 +47,21 @@
   /* Центральная часть сайта */
   .center__cont {
 	display: flex;
-	justify-content: center;
-	align-items: flex-start;
-  
 	margin-top: 95px;
+	gap: 27px;
   }
   
   .left {
-	width: 30%;
+	width: 536px;
+	height: 374px;
   }
   
   .SEO_text {
 	color: rgb(0, 0, 0);
+	font-family: Gilroy-Bold;
 	font-size: 60px;
 	font-weight: 400;
-	line-height: 69px;
+	line-height: -1px;
 	letter-spacing: 0%;
 	text-align: left;
   }
@@ -84,6 +92,11 @@
 	color: rgb(170, 170, 170);
 	background: rgb(255, 255, 255);
   }
+
+  .right {
+	width: 544.81px;
+	height: 374.84px;
+  }
   
   .description {
 	color: rgb(136, 136, 136);
@@ -95,10 +108,11 @@
   }
   
   /* Нижняя панель */
+
   .bottom__panel {
 	display: flex;
 	justify-content: center;
-	margin-top: 200px;
+	margin-top: 162px;
 	background: rgb(255, 255, 255);
 	align-items: center;
   }
