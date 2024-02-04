@@ -1,99 +1,108 @@
-@font-face {
-	font-family: 'Gilroy-Bold';
-	src: url('./fonts/gilroy-bold.eot'); /* IE 9 Compatibility Mode */
-	src: url('./fonts/gilroy-bold.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
-		url('./fonts/gilroy-bold.woff2') format('woff2'), /* Super Modern Browsers */
-		url('./fonts/gilroy-bold.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
-		url('./fonts/gilroy-bold.ttf') format('truetype'), /* Safari, Android, iOS */
-		url('./fonts/gilroy-bold.svg#gilroy-bold') format('svg'); /* Chrome < 4, Legacy iOS */
-
-		font-family: 'Gilroy-Medium';
-	src: url('../fonts/gilroy-medium.eot'); /* IE 9 Compatibility Mode */
-	src: url('../fonts/gilroy-medium.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
-		url('../fonts/gilroy-medium.woff2') format('woff2'), /* Super Modern Browsers */
-		url('../fonts/gilroy-medium.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
-		url('../fonts/gilroy-medium.ttf') format('truetype'), /* Safari, Android, iOS */
-		url('../fonts/gilroy-medium.svg#gilroy-medium') format('svg'); /* Chrome < 4, Legacy iOS */
-}
-body{
-    background-color: FFFFFF;
-}
-.logo {
-	/* Logo */
-	width: 137px;
-	height: 40px;
-}
-.header{
-	display: inline-flex;
-	flex-shrink: 0;
-}
-.menu {
-	color: rgb(0, 0, 0);
+* {
+	font-family: Arimo, sans-serif;
+  }
+  a {
 	text-decoration: none;
-	font-family: Gilroy-Medium;
-	font-size : 14px;
-	font-weight : 400;
-}
-.menu:hover {
+  }
+  button {
+	border: none;
+  }
+  
+  /* Класс для панели header */
+  .heading__bar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+  }
+  
+  .menu__links__container {
+	display: inline-block;
+  }
+  
+  .text,
+  .home_text_link {
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 16px;
+	letter-spacing: 0%;
+	text-align: left;
+  
+	margin: 20px;
+  
+	color: rgb(0, 0, 0);
+  }
+  .home_text_link {
 	color: rgb(242, 88, 34);
-}
-.top_info{
-	width: 536px;
-}
-.h1_text {
-	font-family: Gilroy-Bold;
-    color: rgb(0, 0, 0);
-	font-family: Gilroy-Bold;
+  }
+  
+  /* Центральная часть сайта */
+  .center__cont {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+  
+	margin-top: 95px;
+  }
+  
+  .left {
+	width: 30%;
+  }
+  
+  .SEO_text {
+	color: rgb(0, 0, 0);
 	font-size: 60px;
 	font-weight: 400;
-	line-height: -1px;
+	line-height: 69px;
 	letter-spacing: 0%;
-}
-.p_text{
-	font-family : Gilroy-Medium;
-	font-style : ☞;
-	font-size : 20px;
-	font-weight : 400;
-	color: rgb(136, 136, 136);
-}
-.top_buttons{
-	width: 302px;
-	height: 50px;
-}
-
-button {
+	text-align: left;
+  }
+  
+  .buttons {
+	display: flex;
+	align-content: center;
+  }
+  
+  .button_left,
+  .button_right {
+	font-size: 15px;
+	font-weight: 300;
+	line-height: 2.5;
 	width: 140px;
-	height: 50px;
+  }
+  .button_left {
 	border-radius: 50px;
 	box-shadow: 4px 4px 8px 0px rgba(242, 88, 34, 0.2);
 	background: rgb(242, 88, 34);
-	font-size: 15px;
-    color: white;
-	font-weight: 400;
-	line-height: -1px;
-	letter-spacing: 0%;
-}
-.a_1 {	
-	text-decoration: none;
+	margin-right: 70px;
+  
+	border: rgb(2, 221, 20);
+	color: rgb(255, 255, 255);
+  }
+  
+  .button_right {
 	color: rgb(170, 170, 170);
-	font-family: Gilroy-Bold;
-	font-size: 15px;
+	background: rgb(255, 255, 255);
+  }
+  
+  .description {
+	color: rgb(136, 136, 136);
+	font-size: 20px;
 	font-weight: 400;
-	line-height: -1px;
+	line-height: 23px;
 	letter-spacing: 0%;
 	text-align: left;
-}
-.top_logo {
-	width: 1920px;
-	height: 243px;
-}
-.partners_logo {
-	display: inline-flex;
+  }
+  
+  /* Нижняя панель */
+  .bottom__panel {
+	display: flex;
 	justify-content: center;
-	height: 50px;
-	gap: 48px;
-}
-.image{
-	width: 544.81px;
-	height: 374.84px;
-}
+	margin-top: 200px;
+	background: rgb(255, 255, 255);
+	align-items: center;
+  }
+  .bottom_img {
+	size: 50px;
+	margin:10px ;
+  }
