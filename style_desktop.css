@@ -4,6 +4,32 @@
     padding: 0;
 }
 
+:root {
+    --count: "0";
+}
+
+.basket__block{
+    position: relative;
+}
+.basket__block::after {
+    content: var(--count);
+    background-color: darkred;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    color: white;
+    top: 8px;
+    right: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.catalog button:active{
+
+}
+
 a {
     text-decoration: none;
 }
